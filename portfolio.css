@@ -9,6 +9,10 @@ nav {
     font-weight: 700;
 }
 
+nav-link {
+    float: right;
+}
+
 section {
     padding: 5rem;
     margin-bottom: 0;
@@ -130,25 +134,32 @@ li {
     margin-top: 14rem;
 }
 
-img:hover ~ .caption .caption-content {
-    color: transparent; 
-    /* use jQuery hover and fadeOut() methods in the future */
+@media only screen and (max-width: 1025px) {
+    .caption-content {
+        margin-top: 20rem;
+    }
 }
 
-.image-1:hover {
-    content:url("assets/gifs/expens1fy.gif");
-}
+@media only screen and (min-width: 1025px) {
+    img:hover ~ .caption .caption-content {
+        color: transparent; 
+    }
 
-.image-2:hover {
-    content:url("assets/gifs/indec1sion.gif");
-}
+    .image-1:hover {
+        content:url("assets/gifs/expens1fy.gif");
+    }
 
-.image-3:hover {
-    content:url("assets/gifs/yelpcamp.gif");
-}
+    .image-2:hover {
+        content:url("assets/gifs/indec1sion.gif");
+    }
 
-.image-4:hover {
-    content:url("assets/gifs/tweetar.gif");
+    .image-3:hover {
+        content:url("assets/gifs/yelpcamp.gif");
+    }
+
+    .image-4:hover {
+        content:url("assets/gifs/tweetar.gif");
+    }
 }
 
 /* RESUME */
