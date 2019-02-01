@@ -9,10 +9,6 @@ nav {
     font-weight: 700;
 }
 
-nav-link {
-    float: right;
-}
-
 section {
     padding: 5rem;
     margin-bottom: 0;
@@ -134,13 +130,22 @@ li {
     margin-top: 14rem;
 }
 
-@media only screen and (max-width: 1025px) {
+/* previously 1025 */
+@media only screen and (max-width: 1249px) {
     .caption-content {
         margin-top: 20rem;
     }
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (max-width: 1240px) {
+    .caption-content h3, p {
+        color: red !important;
+    }
+}
+
+
+/* was 1025px */
+@media only screen and (min-width: 1249px) {
     img:hover ~ .caption .caption-content {
         color: transparent; 
     }
@@ -175,6 +180,27 @@ li {
     width: 50%;
 }
 
+.resume > .container > .row {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.resume--grid  {
+    text-align: left;
+}
+
+.resume--grid > div {
+    margin-top: 2rem;
+}
+
+#first-item {
+    margin-top: 0;
+}
+
+.col-lg-8 > span {
+    margin-right: 2rem;
+}
+
 .resume-container {
     width: 70%;
     height: 50%;
@@ -191,8 +217,8 @@ li {
 .download {
     position: absolute;
     float: right;
-    margin-top: -130px;
-    margin-left: 150px;
+    margin-top: -8.25rem;
+    margin-left: 6rem;
 }
 
 object {
