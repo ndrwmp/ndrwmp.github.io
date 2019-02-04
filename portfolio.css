@@ -155,17 +155,42 @@ li {
     padding-right: 0.25rem;
 }
 
+#rails-icon {
+    font-size: 155%;
+}
+
+#js-icon {
+    font-size: 190%;
+}
+
 /* MEDIA QUERIES */
 
-/*  */
+/* i want this to only show on mobile devices (376px width or less)
+but it's not working */
+/* @media only screen and (max-width: 376px) {
+    #rails-icon {
+        font-size: 155%;
+    }
+
+    #js-icon {
+        font-size: 190%;
+    }
+} */
+
 @media only screen and (min-width: 1024px) {
     .caption-content {
         margin-top: 9rem;
     }
+
+    #js-icon {
+        font-size: 200%;
+    }
+
+    #rails-icon {
+        font-size: 200%;
+    }
 }
 
-
-/* was 1025px */
 @media only screen and (min-width: 1249px) {
     .caption-content {
         margin-top: 14rem;
@@ -192,6 +217,7 @@ li {
     }
 
     .col-sm-4 p {
+        /* font-size: 200%; */
         font-size: 200%;
         /* display: flex; */
         display: left;
