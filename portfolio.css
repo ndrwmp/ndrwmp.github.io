@@ -24,6 +24,8 @@
 body {
     position: relative;
     font-family: 'Dosis', sans-serif !important;
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(7,127,149,1) 35%, rgba(0,255,248,1) 100%); */
 }
 
 nav {
@@ -98,7 +100,8 @@ p > i,img {
 }
 
 p img {
-    width: 3rem;
+    /* width: 3rem; */
+    width: 4rem;
     height: 4rem;
 }
 
