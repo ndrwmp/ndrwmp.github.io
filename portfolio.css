@@ -36,7 +36,6 @@ section {
 }
 
 section:nth-child(even) {
-    /* background-color: #bbcfff; */
     background-color: #a5b6d1;
 }
 
@@ -133,7 +132,8 @@ p img {
 .caption-content {
     color: white;
     margin: 1.5rem;
-    margin-top: 14rem;
+    margin-top: 20rem;
+    /* was 14rem */
 }
 
 /* FOOTER */
@@ -154,16 +154,8 @@ li {
 
 /* MEDIA QUERIES */
 
-/* previously 1025, previously 1249 */
-@media only screen and (max-width: 1023px) {
-    .caption-content {
-        margin-top: 20rem;
-    }
-}
-
-/* was 1023 px max */
-/* @media only screen and (min-width: 769px, max-width: 1025px) { */
-@media only screen and (max-width: 1025px) {
+/*  */
+@media only screen and (min-width: 1024px) {
     .caption-content {
         margin-top: 9rem;
     }
@@ -172,6 +164,10 @@ li {
 
 /* was 1025px */
 @media only screen and (min-width: 1249px) {
+    .caption-content {
+        margin-top: 14rem;
+    }
+
     img:hover ~ .caption .caption-content {
         color: transparent; 
     }
@@ -223,8 +219,4 @@ li {
     float: right;
     margin-top: -5rem;
     margin-left: 6rem;
-}
-
-object {
-    margin: 0 auto;
 }
