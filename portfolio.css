@@ -19,6 +19,7 @@
     9. media queries
 */
 
+
 /* GENERAL */
 
 body {
@@ -54,8 +55,8 @@ h1 {
     font-weight: 800 !important;
 }
 
+
 /* PROFILE */
-/* help from https://www.webfx.com/blog/web-design/circular-images-css/ */
 
 .selfie {
     position: relative;
@@ -83,7 +84,7 @@ h1 {
     font-size: 3rem;
 }
 
-/* TOOLS AND TECHNOLOGIES*/
+/* TOOLS AND TECHNOLOGIES */
 
 .col-sm-4 p {
     font-size: 200%;
@@ -113,6 +114,7 @@ p img {
     color: turquoise;
 }
 
+
 /* PORTFOLIO */
 
 .project {
@@ -139,7 +141,13 @@ p img {
     /* was 14rem */
 }
 
+.img-fluid {
+    width: 100%;
+}
+
+
 /* FOOTER */
+
 footer {
     padding: 1.5rem;
     background-color: #2c3e50;
@@ -161,6 +169,31 @@ li {
 
 #js-icon {
     font-size: 190%;
+}
+
+
+/* RESUME */
+
+.resume {
+    text-align: center;
+}
+
+.resume-title {
+    padding-bottom: 0rem;
+}
+
+.resume-container {
+    width: 70%;
+    height: 50%;
+    display: block;
+    margin: auto;
+}
+
+.download {
+    position: absolute;
+    float: right;
+    margin-top: -5rem;
+    margin-left: 6rem;
 }
 
 /* MEDIA QUERIES */
@@ -200,21 +233,71 @@ but it's not working */
         color: transparent; 
     }
 
+    /* expens1fy gif */
+    .image-1 {
+        content: url(assets/expens1fy/expens1fy\ 1.png);
+    }
+    
     .image-1:hover {
-        content:url("assets/gifs/expens1fy.gif");
+        animation: gif-1 7s infinite steps(1);
+    }
+    
+    @keyframes gif-1 {
+        0%   { content: url(assets/expens1fy/expens1fy\ 1.png) } 
+        25%  { content: url(assets/expens1fy/expens1fy\ 2.png) } 
+        50%  { content: url(assets/expens1fy/expens1fy\ 3.png) }
+        75%  { content: url(assets/expens1fy/expens1fy\ 4.png) }
+        100% { content: url(assets/expens1fy/expens1fy\ 1.png) }
     }
 
+    /* indec1sion gif */
+    .image-2 {
+        content: url(assets/indec1sion/indec1sion\ 1.png);
+    }
+    
     .image-2:hover {
-        content:url("assets/gifs/indec1sion.gif");
+        animation: gif-2 5s infinite steps(1);
+    }
+    
+    @keyframes gif-2 {
+        0%   { content: url(assets/indec1sion/indec1sion\ 1.png) } 
+        33%  { content: url(assets/indec1sion/indec1sion\ 2.png) } 
+        66%  { content: url(assets/indec1sion/indec1sion\ 3.png) }
+        100% { content: url(assets/indec1sion/indec1sion\ 1.png)}
     }
 
+    /* YelpCamp gif */
+    .image-3 {
+        content: url("assets/yelpcamp/yelpcamp\ 1.png");
+    }
+    
     .image-3:hover {
-        content:url("assets/gifs/yelpcamp.gif");
+        animation: gif-3 7s infinite steps(1);
+    }
+    
+    @keyframes gif-3 {
+        0%   { content: url(assets/yelpcamp/yelpcamp\ 1.png) } 
+        33%  { content: url(assets/yelpcamp/yelpcamp\ 2.png) } 
+        66%  { content: url(assets/yelpcamp/yelpcamp\ 3.png) }
+        100% { content: url(assets/yelpcamp/yelpcamp\ 1.png)}
     }
 
-    .image-4:hover {
-        content:url("assets/gifs/tweetar.gif");
+    /* tweetar gif */
+    .image-4 {
+        content: url("assets/tweetar/tweetar\ 1.png");
     }
+    
+    .image-4:hover {
+        animation: gif-4 5s infinite steps(1);
+    }
+
+    @keyframes gif-4 {
+        0%   { content: url(assets/tweetar/tweetar\ 1.png) } 
+        33%  { content: url(assets/tweetar/tweetar\ 2.png) } 
+        66%  { content: url(assets/tweetar/tweetar\ 3.png) }
+        100% { content: url(assets/tweetar/tweetar\ 1.png) }
+    }
+
 
     .col-sm-4 p {
         /* font-size: 200%; */
@@ -224,28 +307,4 @@ but it's not working */
         justify-content: center;
         margin-left: 4rem;
     }
-}
-
-/* RESUME */
-
-.resume {
-    text-align: center;
-}
-
-.resume-title {
-    padding-bottom: 0rem;
-}
-
-.resume-container {
-    width: 70%;
-    height: 50%;
-    display: block;
-    margin: auto;
-}
-
-.download {
-    position: absolute;
-    float: right;
-    margin-top: -5rem;
-    margin-left: 6rem;
 }
