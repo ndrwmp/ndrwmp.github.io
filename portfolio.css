@@ -292,6 +292,15 @@ but it's not working */
     }
 }
 
+.col-sm-4 p {
+    /* font-size: 200%; */
+    font-size: 200%;
+    /* display: flex; */
+    display: left;
+    justify-content: center;
+    margin-left: 4rem;
+}
+
 /* RESUME */
 
 .resume {
