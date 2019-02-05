@@ -214,7 +214,7 @@ but it's not working */
 
     /* expens1fy gif */
 
-    .image-1 {
+    /* .image-1 {
         content: url(assets/expens1fy/expens1fy\ 1.png);
     }
     
@@ -277,7 +277,7 @@ but it's not working */
         33%  { content: url(assets/tweetar/tweetar\ 2.png) } 
         66%  { content: url(assets/tweetar/tweetar\ 3.png) }
         100% { content: url(assets/tweetar/tweetar\ 1.png) }
-    }
+    } */
 
 
     .col-sm-4 p {
