@@ -128,8 +128,7 @@ p img {
     width: 100%;
     top: 0;
     bottom: 0;
-    z-index: 1;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 .caption-content {
@@ -139,14 +138,13 @@ p img {
     /* was 14rem */
 }
 
-.caption-content span p {
-    position: relative;
+.btn-group {
+    left: 1rem;
+    /* /* margin-left: 1rem; */
 }
 
-.caption-content span p a {
-    /* position: relative; */
-    left: 1rem;
-    z-index: 5;
+.btn-group button a {
+    color: white;
 }
 
 .img-fluid {
@@ -205,14 +203,6 @@ but it's not working */
     }
 }
 
-.image-1 {
-    content: url(assets/expens1fy/expens1fy\ 1.png);
-}
-
-.image-2 {
-    content: url(assets/indec1sion/indec1sion\ 1.png);
-}
-
 @media only screen and (min-width: 1249px) {
     .caption-content {
         margin-top: 14rem;
@@ -223,6 +213,10 @@ but it's not working */
     }
 
     /* expens1fy gif */
+
+    .image-1 {
+        content: url(assets/expens1fy/expens1fy\ 1.png);
+    }
     
     .image-1:hover {
         animation: gif-1 7s infinite steps(1);
@@ -237,6 +231,10 @@ but it's not working */
     }
 
     /* indec1sion gif */
+
+    .image-2 {
+        content: url(assets/indec1sion/indec1sion\ 1.png);
+    }
     
     .image-2:hover {
         animation: gif-2 5s infinite steps(1);
